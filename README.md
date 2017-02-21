@@ -1,27 +1,23 @@
-# GitBook Boilerplate
+Procesadores de Lenguajes
+==
 
-# Installation
+### Practica 02
+  [Descripción de la tarea](www.google.com)  
 
-```shell
-cd ~/code
+### Objetivos
+  Transcribir la [tarea 1](https://github.com/ULL-ESIT-PL-1617/tareas-iniciales-fran-ale) y reescribir los scripts para la automatización
+  del despliege de la aplicación web en distintas plataformas:
+  - Gitbook
+  - GitHub pages
+  - Servicio IAAS de la ULL
+  - Heroku
 
-git clone https://github.com/enten/gitbook-boilerplate.git awesome-project
-
-cd awesome-project
-
-rm -fr .git
-
-vi package.json
-# edit repository.url and repository.wiki
-
-git remote add origin <url>
-
-npm run build
-# or
-# npm run generate-gitbook && npm run generate-wiki
-
-npm run deploy
-# or
-# npm run deploy-gitbook && npm run deploy-wiki
-```
-__Important__: Wiki must be created on Github
+### Desplieges
+  - [GitBook]()
+  - [GitHub Page]()
+  - [Heroku]()
+  - [IAAS]()
+  
+### Colaboradores
+  [Francisco Palacios Rodríguez](franjpr.github.io)  
+  [Alejandro Hernandez Padrón](alehdezp.github.io)

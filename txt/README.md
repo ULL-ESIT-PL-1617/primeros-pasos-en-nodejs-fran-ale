@@ -1,17 +1,11 @@
-# Book Title
+Tutorial
+==
+##### Indice
 
-> Book introduction here.
-
-## Live Demo
-
-[Check demo!](http://my-user.github.io/my-repo)
-
-## Background
-
-> [gitbook](http://www.gitbook.io) is used to generate github pages.
-
-## Contributing
-
-1. Create Issue
-2. Fork and PR
-
+- [x] Instalar NodeJS
+- [x] Instalar Git/Git for Windows
+- [x] Instalar Atom
+- [x] Instalar Gitbook Desktop
+- [x] Crear una gh-page
+- [x] Documentación de MarkDown
+- [x] Instrucciones para usar PanDoc
