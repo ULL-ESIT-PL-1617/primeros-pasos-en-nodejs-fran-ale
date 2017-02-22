@@ -4,11 +4,12 @@
   "description": "Practica 02, automatizacion de despliegue",
   "main": "index.js",
   "scripts": {
+    "create-gitbook": "node scripts/generate-gitbook.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ULL-ESIT-PL-1617/primeros-pasos-en-nodejs-fran-ale.git"
+    "url": "https://github.com/ULL-ESIT-PL-1617/primeros-pasos-en-nodejs-fran-ale.git"
   },
   "keywords": [
     "nodejs",
@@ -25,6 +26,11 @@
   },
   "homepage": "https://github.com/ULL-ESIT-PL-1617/primeros-pasos-en-nodejs-fran-ale#readme",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gh-pages": "^0.12.0",
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4"
+  },
+  "devDependencies": {
+    "gitbook-cli": "^2.3.0"
   }
 }
