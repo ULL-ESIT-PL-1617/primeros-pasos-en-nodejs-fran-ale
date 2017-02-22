@@ -4,7 +4,7 @@
   "description": "Practica 02, automatizacion de despliegue",
   "main": "index.js",
   "scripts": {
-    "create-gitbook": "./node_modules/.bin/gitbook build ./txt ./ghpage",
+    "create-gitbook": "./node_modules/.bin/gitbook build ./txt ./gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
