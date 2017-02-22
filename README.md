@@ -2,7 +2,7 @@ Procesadores de Lenguajes
 ==
 
 ### Practica 02
-  [Descripción de la tarea](www.google.com)  
+  [Descripción de la tarea](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/practicas/practicatareasiniciales2.html)  
 
 ### Objetivos
   Transcribir la [tarea 1](https://github.com/ULL-ESIT-PL-1617/tareas-iniciales-fran-ale) y reescribir los scripts para la automatización
@@ -14,10 +14,10 @@ Procesadores de Lenguajes
 
 ### Desplieges
   - [GitBook]()
-  - [GitHub Page]()
+  - [GitHub Page](https://ull-esit-pl-1617.github.io/primeros-pasos-en-nodejs-fran-ale/)
   - [Heroku]()
   - [IAAS]()
-  
+
 ### Colaboradores
   [Francisco Palacios Rodríguez](franjpr.github.io)  
   [Alejandro Hernandez Padrón](alehdezp.github.io)
