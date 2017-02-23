@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var ghpages = require('gulp-gh-pages');
+var buildBranch = require('gulp-build-branch');
 
 gulp.task('gen-book', function(){
   var exec = require('child_process').exec;
@@ -28,6 +29,21 @@ gulp.task('deploy-iaas', function(){
 gulp.task('update-heroku', function(){
   var exec = require('child_process').exec;
   exec('git add -A && git commit -m "Actualizando herokuapp" && git push origin master && git push heroku master', function(err, out, errout){
+    if(err){
+      console.log('Err:' + err);
+    } else {
+      console.log('Output: \n' + out + '\n');
+    }
+  });
+});
+
+gulp.task('deploy-gitbook', ['build'], function() {
+  return buildBranch({ branch: 'gitbook', folder: 'book', commit : 'Desplegando libro' });
+});
+
+gulp.task('update-gitbook', function(){
+  var exec = require('child_process').exec;
+  exec('git checkout gitbook && git add -A && git commit -m "Actualizando gitbook" && git push origin gitbook && git push gbook gitbook', function(err, out, errout){
     if(err){
       console.log('Err:' + err);
     } else {
