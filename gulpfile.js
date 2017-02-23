@@ -21,13 +21,12 @@ gulp.task('deploy-ghpages', function () {
 
 gulp.task('deploy-iaas', function(){
   var sshexec = require('ssh-exec');
-  var cmd = 'cd src/nodejs-test && git pull && npm install && node app.js'
+  var cmd = 'cd src/primeros-pasos-en-nodejs-fran-ale && git pull && npm install && node app.js'
   sshexec(cmd, 'usuario@10.6.129.208').pipe(process.stdout);
 });
 
 gulp.task('update-heroku', function(){
   var exec = require('child_process').exec;
-
   exec('git add . && git commit -m "Actualizando herokuapp" && git push origin master && git push heroku master', function(err, out, errout){
     if(err){
       console.log('Err:' + err);
