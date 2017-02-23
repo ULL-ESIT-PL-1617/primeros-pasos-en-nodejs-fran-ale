@@ -1,10 +1,10 @@
 {
   "name": "primeros-pasos-en-nodejs-fran-ale",
   "version": "1.0.0",
-  "description": "Practica 02, automatizacion de despliegue",
-  "main": "index.js",
+  "description": "Practica 02, automatizacion de despliegues",
+  "main": "app.js",
   "scripts": {
-    "create-gitbook": "./node_modules/.bin/gitbook build ./txt ./gh-pages",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,21 +16,18 @@
     "heroku",
     "gitbook"
   ],
-  "author": [
-    "Franjpr",
-    "Alehdezp"
-  ],
+  "author": "fran-ale",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ULL-ESIT-PL-1617/primeros-pasos-en-nodejs-fran-ale/issues"
   },
   "homepage": "https://github.com/ULL-ESIT-PL-1617/primeros-pasos-en-nodejs-fran-ale#readme",
   "dependencies": {
-    "gh-pages": "^0.12.0",
+    "express": "^4.14.1",
+    "gitbook-cli": "^2.3.0",
     "gulp": "^3.9.1",
-    "gulp-gh-pages": "^0.5.4"
-  },
-  "devDependencies": {
-    "gitbook-cli": "^2.3.0"
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-shell": "^0.6.1",
+    "ssh-exec": "^2.0.0"
   }
 }

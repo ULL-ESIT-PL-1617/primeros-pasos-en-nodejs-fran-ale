@@ -1,20 +1,38 @@
-var ghp = require('gulp-gh-pages');
 var gulp = require('gulp');
+var ghpages = require('gulp-gh-pages');
 
+gulp.task('gen-book', function(){
+  var exec = require('child_process').exec;
+  var fullpath = require('path').resolve() + '\\node_modules\\.bin\\';
+  var command  = 'gitbook build ./book ./ghpages'
 
-gulp.task('build', function() {
-	var exec = require('child_process').exec;
-
-    exec("npm run create-gitbook", 
-                function (error, stdout, stderr) {
-      console.log('stdout: ' + stdout);
-      console.log('stderr: ' + stderr);
-      if (error !== null) {
-        console.log('exec error: ' + error);
-      }
-    });
+  exec(fullpath + command, function(err, out, errout){
+    if(err){
+      console.log('Err:' + err);
+    } else {
+      console.log('Output: \n' + out + '\n');
+    }
+  })
 });
 
-gulp.task('deploy', function() {
-  return gulp.src('./ghpage/**/*').pipe(ghp());
+gulp.task('deploy-ghpages', function () {
+  return gulp.src('./ghpages/**/*').pipe(ghpages({"message" : ' ghpages deployed'}));
 });
+
+gulp.task('deploy-iaas', function(){
+  var sshexec = require('ssh-exec');
+  var cmd = 'cd src/nodejs-test && git pull && npm install && node app.js'
+  sshexec(cmd, 'usuario@10.6.129.208').pipe(process.stdout);
+});
+
+gulp.task('update-heroku', function(){
+  var exec = require('child_process').exec;
+
+  exec('git add . && git commit -m "Actualizando herokuapp" && git push origin master && git push heroku master', function(err, out, errout){
+    if(err){
+      console.log('Err:' + err);
+    } else {
+      console.log('Output: \n' + out + '\n');
+    }
+  });
+})
