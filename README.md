@@ -19,5 +19,5 @@ Procesadores de Lenguajes
   - [IAAS]()
 
 ### Colaboradores
-  [Francisco Palacios Rodríguez](franjpr.github.io)  
-  [Alejandro Hernandez Padrón](alehdezp.github.io)
+  [Francisco Palacios Rodríguez](https://franjpr.github.io)  
+  [Alejandro Hernandez Padrón](https://alehdezp.github.io)
