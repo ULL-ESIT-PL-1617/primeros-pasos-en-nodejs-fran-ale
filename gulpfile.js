@@ -18,3 +18,5 @@ gulp.task('build', function() {
 gulp.task('deploy', function() {
   return gulp.src('./ghpage/**/*').pipe(ghp());
 });
+
+gulp.task('generate-deploy', ['build', 'deploy']);
