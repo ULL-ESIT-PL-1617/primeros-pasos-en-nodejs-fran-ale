@@ -25,6 +25,7 @@ gulp.task('deploy-iaas', function(){
   sshexec(cmd, 'usuario@10.6.129.208').pipe(process.stdout);
 });
 
+<<<<<<< HEAD
 gulp.task('update-heroku', function(){
   var exec = require('child_process').exec;
 
@@ -36,3 +37,6 @@ gulp.task('update-heroku', function(){
     }
   });
 })
+=======
+gulp.task('generate-deploy', ['build', 'deploy']);
+>>>>>>> 65e519847c5b1577b8798aa6efb49977a0927258
