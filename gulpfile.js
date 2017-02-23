@@ -27,7 +27,7 @@ gulp.task('deploy-iaas', function(){
 
 gulp.task('update-heroku', function(){
   var exec = require('child_process').exec;
-  exec('git add . && git commit -m "Actualizando herokuapp" && git push origin master && git push heroku master', function(err, out, errout){
+  exec('git add -A && git commit -m "Actualizando herokuapp" && git push origin master && git push heroku master', function(err, out, errout){
     if(err){
       console.log('Err:' + err);
     } else {
